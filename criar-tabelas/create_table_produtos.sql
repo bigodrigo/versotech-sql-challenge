@@ -1,0 +1,5 @@
+CREATE TABLE PRODUTOS (
+    id_produto SERIAL PRIMARY KEY,
+    descricao VARCHAR(100) NOT NULL,
+    inativo BOOLEAN DEFAULT FALSE
+);
