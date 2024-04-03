@@ -59,12 +59,12 @@ Realizar uma série de tarefas divididas em Consultas Básicas e de Junção. Fo
 
 <div align="center">
     <p>Consulta :</p>
-    <img src="./design/homepage.png">
+    <img src="./design/consulta-vendedor-faturamento.png">
 </div>
 
 <div align="center">
     <p>Consulta de Junção:</p>
-    <img src="./design/homepage.png">
+    <img src="./design/consulta-juncao.png">
 </div>
 
 ### Links
