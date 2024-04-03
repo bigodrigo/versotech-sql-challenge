@@ -76,9 +76,9 @@ Realizar uma série de tarefas divididas em Consultas Básicas e de Junção. Fo
 
 ### Guia Rápido
 
-- Utilizando algum software, como o DBeaver, inicie criando as tabelas de 1-7, cujos códigos estão na pasta [Criar Tabelas](/prova-sql-entrevista/criar-tabelas/1_create_table_produtos.sql). Em seguida utilize os códigos da pasta [Inserir Dados](/prova-sql-entrevista/inserir-dados/1_insert_produtos_seed.sql) na mesma ordem numérica.
+- Utilizando algum software, como o DBeaver, inicie criando as tabelas de 1-7, cujos códigos estão na pasta [Criar Tabelas](/criar-tabelas/1_create_table_produtos.sql). Em seguida utilize os códigos da pasta [Inserir Dados](/inserir-dados/1_insert_produtos_seed.sql) na mesma ordem numérica.
 
-- Na pasta [Consultas Básicas](/prova-sql-entrevista/solucao/consultas-basicas/) estão os códigos responsáveis pelas imagens em [Layout](#-layout), todas as tarefas das consultas básicas foram desenvolvidas e atingiram o objetivo de forma satisfatória, basta executar cada um dos scripts após a configuração dos passos anteriores.
+- Na pasta [Consultas Básicas](/solucao/consultas-basicas/) estão os códigos responsáveis pelas imagens em [Layout](#-layout), todas as tarefas das consultas básicas foram desenvolvidas e atingiram o objetivo de forma satisfatória, basta executar cada um dos scripts após a configuração dos passos anteriores.
 
 ### 🔖 Solução
 
@@ -112,7 +112,7 @@ Realizar uma série de tarefas divididas em Consultas Básicas e de Junção. Fo
     <img src="./design/consulta-juncao.png">
 </div>
 
-- Infelizmente não foi possível atingir o resultado final esperado para a consulta de junções em [Consultas Complexas](/prova-sql-entrevista/solucao/consultas-complexas/consulta-juncao.sql), minhas capacidades atuais não permitiram uma boa consulta que comparasse a junção da tabela de pedidos com os itens e verificasse a configuração dos pedidos, para que pudessemos retornar o Preço Base já praticado OU utilizar o Preço Mínimo, a tabela resultante apresentada a cima no Layout se encontra em uma etapa intermediária que poderia ajudar a resolver a tarefa mais complexa.
+- Infelizmente não foi possível atingir o resultado final esperado para a consulta de junções em [Consultas Complexas](/solucao/consultas-complexas/consulta-juncao.sql), minhas capacidades atuais não permitiram uma boa consulta que comparasse a junção da tabela de pedidos com os itens e verificasse a configuração dos pedidos, para que pudessemos retornar o Preço Base já praticado OU utilizar o Preço Mínimo, a tabela resultante apresentada a cima no Layout se encontra em uma etapa intermediária que poderia ajudar a resolver a tarefa mais complexa.
 
 - Esta tabela demostra boa parte das informações pedidas, a partir dela seria possível utilizar o pedido_mais_atual e o seu preço praticado, este valor deveria ser adicionado a tabela de Preço Base e se não houvesse o valor correspondente ao produto e à empresa, seria substituido pelo preco_minimo. Esta tabela ainda permite comparar se os valores praticados estão dentro do intervalo correto.
 
