@@ -78,7 +78,7 @@ Realizar uma série de tarefas divididas em Consultas Básicas e de Junção. Fo
 
 - Utilizando algum software, como o DBeaver, inicie criando as tabelas de 1-7, cujos códigos estão na pasta [Criar Tabelas](/criar-tabelas/). Em seguida utilize os códigos da pasta [Inserir Dados](/inserir-dados/) na mesma ordem numérica.
 
-- Na pasta [Consultas Básicas](/solucao/consultas-basicas/) estão os códigos responsáveis pelas imagens em [Layout](#-layout), todas as tarefas das consultas básicas foram desenvolvidas e atingiram o objetivo de forma satisfatória, basta executar cada um dos scripts após a configuração dos passos anteriores.
+- Na pasta [Consultas Básicas](/solucao/consultas-basicas/) estão os códigos responsáveis pelas imagens em [Solução](#-solução), todas as tarefas das consultas básicas foram desenvolvidas e atingiram o objetivo de forma satisfatória, basta executar cada um dos scripts após a configuração dos passos anteriores.
 
 ### 🔖 Solução
 
