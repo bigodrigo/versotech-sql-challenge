@@ -112,11 +112,11 @@ Realizar uma série de tarefas divididas em Consultas Básicas e de Junção. Fo
     <img src="./design/consulta-juncao.png">
 </div>
 
-- Infelizmente não foi possível atingir o resultado final esperado para a consulta de junções em [Consultas Complexas](/solucao/consultas-complexas/consulta-juncao.sql), minhas capacidades atuais não permitiram uma boa consulta que comparasse a junção da tabela de pedidos com os itens e verificasse a configuração dos pedidos, para que pudessemos retornar o Preço Base já praticado OU utilizar o Preço Mínimo, a tabela resultante apresentada a cima no Layout se encontra em uma etapa intermediária que poderia ajudar a resolver a tarefa mais complexa.
+- Infelizmente não foi possível atingir o resultado final esperado para a consulta de junções em [Consultas Complexas](/solucao/consultas-complexas/consulta-juncao.sql), minhas capacidades atuais não permitiram uma boa consulta que comparasse a junção da tabela de pedidos com os itens e verificasse a configuração dos pedidos, para que pudessemos retornar o Preço Base já praticado OU utilizar o Preço Mínimo, a tabela resultante apresentada a cima se encontra em uma etapa intermediária que poderia ajudar a resolver a tarefa mais complexa.
 
 - Esta tabela demostra boa parte das informações pedidas, a partir dela seria possível utilizar o pedido_mais_atual e o seu preço praticado, este valor deveria ser adicionado a tabela de Preço Base e se não houvesse o valor correspondente ao produto e à empresa, seria substituido pelo preco_minimo. Esta tabela ainda permite comparar se os valores praticados estão dentro do intervalo correto.
 
-- Para exclarecer melhor como uma possível solução poderia ser obtida podemos desmembrar em partes:
+- Para esclarecer melhor como uma possível solução poderia ser obtida podemos desmembrar em partes:
 
 ```sql
 -- Esta tabela demonstra os pedidos, os produtos, clientes, empresas o preço praticado e qual é o pedido mais atual para o mesmo produto, cliente e empresa!
