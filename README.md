@@ -6,11 +6,11 @@
 
 - [Geral](#geral)
   - [Desafio](#desafio)
-  - [Layout](#-layout)
   - [Links](#links)
 - [Meu Processo](#meu-processo)
   - [Tecnologias](#-tecnologias)
   - [Sobre](#sobre)
+  - [Solução](#-solução)
   - [Melhorias](#muscle-melhorias)
 - [Autor](#autor)
 
@@ -43,29 +43,17 @@ Realizar uma série de tarefas divididas em Consultas Básicas e de Junção. Fo
     - Unindo a listagem de produtos com a listagem de clientes, procure o último preço praticado nesse cliente com esse produto, formule o preço base do produto dentro da coluna chamada preco_base no seu select, conforme a seguinte regra:
         - O preço base do produto deve obedecer a configuração de preço da tabela CONFIG_PRECO_PRODUTO.
         - Caso as junções não retornem o último preço praticado, utilize o menor da configuração de preço do produto.
-        - Nesta mesma consulta, os seguintes campos deverão estar contidos:
-            - Id do produto em questão;
-            - Descrição do produto;
-            - Id do cliente do pedido;
-            - Razão social do cliente;
-            - Id da empresa do pedido;
-            - Razão social da empresa;
-            - Id do vendedor do pedido;
-            - Nome do vendedor;
-            - Preço mínimo e máximo da configuração de preço;
-            - Preço base do produto conforme a regra.
-
-### 🔖 Layout
-
-<div align="center">
-    <p>Consulta :</p>
-    <img src="./design/consulta-vendedor-faturamento.png">
-</div>
-
-<div align="center">
-    <p>Consulta de Junção:</p>
-    <img src="./design/consulta-juncao.png">
-</div>
+    - Nesta mesma consulta, os seguintes campos deverão estar contidos:
+        - Id do produto em questão;
+        - Descrição do produto;
+        - Id do cliente do pedido;
+        - Razão social do cliente;
+        - Id da empresa do pedido;
+        - Razão social da empresa;
+        - Id do vendedor do pedido;
+        - Nome do vendedor;
+        - Preço mínimo e máximo da configuração de preço;
+        - Preço base do produto conforme a regra.
 
 ### Links
 
@@ -84,11 +72,47 @@ Realizar uma série de tarefas divididas em Consultas Básicas e de Junção. Fo
 
 ### Sobre
 
-- O projeto possui uma pasta com códigos de criação das tabelas necessárias para a preparação do ambiente, uma pasta com códigos que adicionam dados para a simulação de um banco real e uma pasta contendo as soluções das tarefas.
+- O projeto possui uma pasta com códigos de criação das tabelas necessárias para a preparação do ambiente, uma pasta com códigos que adicionam dados para a simulação de um banco real e uma pasta contendo as soluções das tarefas. Para facilitar a reprodução na ordem correta, adicionei números para ordenar cada um dos códigos necessários para a execução.
 
-- Para facilitar a reprodução na ordem correta, adicionei números para ordenar cada um dos códigos necessários para a execução, basta criar as tabelas de 1-7 e adicionar os dados em algum software como DBeaver que permita a manipulação e uma forma visual de executar os scripts, além de visualizar as tabelas.
+### Guia Rápido
 
-- Infelizmente não foi possível atingir o resultado final esperado, minhas capacidades atuais não permitiram uma boa consulta que comparasse a junção da tabela de pedidos com os itens e verificasse a configuração dos pedidos, para que pudessemos retornar o Preço Base já praticado OU utilizar o Preço Mínimo, a tabela resultante apresentada a cima no Layout se encontra em uma etapa intermediária que poderia ajudar a resolver a tarefa mais complexa.
+- Utilizando algum software, como o DBeaver, inicie criando as tabelas de 1-7, cujos códigos estão na pasta [Criar Tabelas](/prova-sql-entrevista/criar-tabelas/1_create_table_produtos.sql). Em seguida utilize os códigos da pasta [Inserir Dados](/prova-sql-entrevista/inserir-dados/1_insert_produtos_seed.sql) na mesma ordem numérica.
+
+- Na pasta [Consultas Básicas](/prova-sql-entrevista/solucao/consultas-basicas/) estão os códigos responsáveis pelas imagens em [Layout](#-layout), todas as tarefas das consultas básicas foram desenvolvidas e atingiram o objetivo de forma satisfatória, basta executar cada um dos scripts após a configuração dos passos anteriores.
+
+### 🔖 Solução
+
+<div align="center">
+    <p>Lista de funcionários ordenando pelo salário decrescente:</p>
+    <img src="./design/funcionario-salario.png">
+</div>
+
+<div align="center">
+    <p>Lista de pedidos de vendas ordenado por data de emissão:</p>
+    <img src="./design/pedidos-ord-data.png">
+</div>
+
+<div align="center">
+    <p>Valor de faturamento por cliente:</p>
+    <img src="./design/faturamento-cliente.png">
+</div>
+
+<div align="center">
+    <p>Valor de faturamento por empresa:</p>
+    <img src="./design/faturamento-empresa.png">
+</div>
+
+<div align="center">
+    <p>Valor de faturamento por vendedor:</p>
+    <img src="./design/faturamento-vendedor.png">
+</div>
+
+<div align="center">
+    <p>Consulta de Junção:</p>
+    <img src="./design/consulta-juncao.png">
+</div>
+
+- Infelizmente não foi possível atingir o resultado final esperado para a consulta de junções em [Consultas Complexas](/prova-sql-entrevista/solucao/consultas-complexas/consulta-juncao.sql), minhas capacidades atuais não permitiram uma boa consulta que comparasse a junção da tabela de pedidos com os itens e verificasse a configuração dos pedidos, para que pudessemos retornar o Preço Base já praticado OU utilizar o Preço Mínimo, a tabela resultante apresentada a cima no Layout se encontra em uma etapa intermediária que poderia ajudar a resolver a tarefa mais complexa.
 
 - Esta tabela demostra boa parte das informações pedidas, a partir dela seria possível utilizar o pedido_mais_atual e o seu preço praticado, este valor deveria ser adicionado a tabela de Preço Base e se não houvesse o valor correspondente ao produto e à empresa, seria substituido pelo preco_minimo. Esta tabela ainda permite comparar se os valores praticados estão dentro do intervalo correto.
 
